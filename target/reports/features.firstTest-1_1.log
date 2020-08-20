@@ -1,0 +1,26 @@
+11:58:58.162 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+11:58:29.618 request:
+1 > GET https://restcountries.eu/rest/v2/name/Australia?fullText=true
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: restcountries.eu
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+11:58:31.164 response time in milliseconds: 1544.56
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, X-Requested-With
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5c50451adcaddf28-MEL
+1 < Cache-Control: public, max-age=86400
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 19 Aug 2020 01:58:31 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: [__cfduid=d0eabd4836d5959f617bb833c9dce7bc21597802310; expires=Fri, 18-Sep-20 01:58:30 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax, __cfduid=d8947f1601a9f76887ed49d25c8af13451597802311; expires=Fri, 18-Sep-20 01:58:31 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax]
+1 < Transfer-Encoding: chunked
+1 < cf-request-id: 04a60984c90000df289fb6d200000001
+[{"name":"Australia","topLevelDomain":[".au"],"alpha2Code":"AU","alpha3Code":"AUS","callingCodes":["61"],"capital":"Canberra","altSpellings":["AU"],"region":"Oceania","subregion":"Australia and New Zealand","population":24117360,"latlng":[-27.0,133.0],"demonym":"Australian","area":7692024.0,"gini":30.5,"timezones":["UTC+05:00","UTC+06:30","UTC+07:00","UTC+08:00","UTC+09:30","UTC+10:00","UTC+10:30","UTC+11:30"],"borders":[],"nativeName":"Australia","numericCode":"036","currencies":[{"code":"AUD","name":"Australian dollar","symbol":"$"}],"languages":[{"iso639_1":"en","iso639_2":"eng","name":"English","nativeName":"English"}],"translations":{"de":"Australien","es":"Australia","fr":"Australie","ja":"オーストラリア","it":"Australia","br":"Austrália","pt":"Austrália","nl":"Australië","hr":"Australija","fa":"استرالیا"},"flag":"https://restcountries.eu/data/aus.svg","regionalBlocs":[],"cioc":"AUS"}]
+

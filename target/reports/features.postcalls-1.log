@@ -1,0 +1,9 @@
+12:38:56.249 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:39:00.081 [print] response result is  {
+  "name": "morpheus",
+  "job": "leader",
+  "id": "705",
+  "createdAt": "2020-08-19T02:38:59.913Z"
+}
+
+12:28:16.924 assertion failed: path: $.job, actual: 'leader', expected: 'leaderOne', reason: not equal

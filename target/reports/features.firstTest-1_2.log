@@ -1,0 +1,26 @@
+11:58:58.162 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+11:58:29.618 request:
+1 > GET https://restcountries.eu/rest/v2/name/New%20Zealand?fullText=true
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: restcountries.eu
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+11:58:31.161 response time in milliseconds: 1542.15
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, X-Requested-With
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5c50451ad8eddf85-MEL
+1 < Cache-Control: public, max-age=86400
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 19 Aug 2020 01:58:31 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: [__cfduid=d272bc7ef52229dbef34d3477d92cda8d1597802310; expires=Fri, 18-Sep-20 01:58:30 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax, __cfduid=d31c7f8496799d927d5f8d6917131fade1597802311; expires=Fri, 18-Sep-20 01:58:31 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax]
+1 < Transfer-Encoding: chunked
+1 < cf-request-id: 04a60984c90000df8585028200000001
+[{"name":"New Zealand","topLevelDomain":[".nz"],"alpha2Code":"NZ","alpha3Code":"NZL","callingCodes":["64"],"capital":"Wellington","altSpellings":["NZ","Aotearoa"],"region":"Oceania","subregion":"Australia and New Zealand","population":4697854,"latlng":[-41.0,174.0],"demonym":"New Zealander","area":270467.0,"gini":36.2,"timezones":["UTC-11:00","UTC-10:00","UTC+12:00","UTC+12:45","UTC+13:00"],"borders":[],"nativeName":"New Zealand","numericCode":"554","currencies":[{"code":"NZD","name":"New Zealand dollar","symbol":"$"}],"languages":[{"iso639_1":"en","iso639_2":"eng","name":"English","nativeName":"English"},{"iso639_1":"mi","iso639_2":"mri","name":"Māori","nativeName":"te reo Māori"}],"translations":{"de":"Neuseeland","es":"Nueva Zelanda","fr":"Nouvelle-Zélande","ja":"ニュージーランド","it":"Nuova Zelanda","br":"Nova Zelândia","pt":"Nova Zelândia","nl":"Nieuw-Zeeland","hr":"Novi Zeland","fa":"نیوزیلند"},"flag":"https://restcountries.eu/data/nzl.svg","regionalBlocs":[],"cioc":"NZL"}]
+

@@ -1,0 +1,26 @@
+11:58:58.162 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+11:59:00.386 assertion failed: path: $[0].capital, actual: 'Beijing', expected: 'Beijing1', reason: not equal
+zip,deflate
+1 > Connection: Keep-Alive
+1 > Host: restcountries.eu
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+11:58:31.152 response time in milliseconds: 1530.71
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, X-Requested-With
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5c50451adcf8df8d-MEL
+1 < Cache-Control: public, max-age=86400
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 19 Aug 2020 01:58:31 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: [__cfduid=da3443886fd32d8b49e82f0663373522f1597802310; expires=Fri, 18-Sep-20 01:58:30 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax, __cfduid=debb4941a108a35865cf42c5897ebb25f1597802310; expires=Fri, 18-Sep-20 01:58:30 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax]
+1 < Transfer-Encoding: chunked
+1 < cf-request-id: 04a60984c90000df8d5798a200000001
+[{"name":"China","topLevelDomain":[".cn"],"alpha2Code":"CN","alpha3Code":"CHN","callingCodes":["86"],"capital":"Beijing","altSpellings":["CN","Zhōngguó","Zhongguo","Zhonghua","People's Republic of China","中华人民共和国","Zhōnghuá Rénmín Gònghéguó"],"region":"Asia","subregion":"Eastern Asia","population":1377422166,"latlng":[35.0,105.0],"demonym":"Chinese","area":9640011.0,"gini":47.0,"timezones":["UTC+08:00"],"borders":["AFG","BTN","MMR","HKG","IND","KAZ","PRK","KGZ","LAO","MAC","MNG","PAK","RUS","TJK","VNM"],"nativeName":"中国","numericCode":"156","currencies":[{"code":"CNY","name":"Chinese yuan","symbol":"¥"}],"languages":[{"iso639_1":"zh","iso639_2":"zho","name":"Chinese","nativeName":"中文 (Zhōngwén)"}],"translations":{"de":"China","es":"China","fr":"Chine","ja":"中国","it":"Cina","br":"China","pt":"China","nl":"China","hr":"Kina","fa":"چین"},"flag":"https://restcountries.eu/data/chn.svg","regionalBlocs":[],"cioc":"CHN"}]
+
+11:58:31.250 assertion failed: path: $[0].capital, actual: 'Beijing', expected: 'Beijing1', reason: not equal

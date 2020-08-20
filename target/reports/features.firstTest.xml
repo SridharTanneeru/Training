@@ -1,0 +1,83 @@
+<testsuite failures="2" name="features/firstTest.feature" skipped="0" tests="4" time="8.841146">
+  <testcase classname="features.firstTest" name="GET the response for the country Australia" time="2.209439">
+    <system-out>* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/Australia' ....................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Canberra" ................................. passed</system-out>
+  </testcase>
+  <testcase classname="features.firstTest" name="GET the response for the country Australia" time="2.209552">
+    <system-out>* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/Australia' ....................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Canberra" ................................. passed
+* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/New Zealand' ..................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Wellington" ............................... passed</system-out>
+  </testcase>
+  <testcase classname="features.firstTest" name="GET the response for the country Australia" time="2.211103">
+    <failure message="firstTest.feature:18 - path: $[0].capital, actual: 'New Delhi', expected: 'New Delhi 1', reason: not equal">* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/Australia' ....................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Canberra" ................................. passed
+* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/New Zealand' ..................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Wellington" ............................... passed
+* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/India' ........................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "New Delhi 1" .............................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: firstTest.feature:18 - path: $[0].capital, actual: 'New Delhi', expected: 'New Delhi 1', reason: not equal&#13;
+	at ✽.* match response[0].capital == "New Delhi 1" (firstTest.feature:18)</failure>
+  </testcase>
+  <testcase classname="features.firstTest" name="GET the response for the country Australia" time="2.211052">
+    <failure message="firstTest.feature:18 - path: $[0].capital, actual: 'Beijing', expected: 'Beijing1', reason: not equal">* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/Australia' ....................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Canberra" ................................. passed
+* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/New Zealand' ..................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Wellington" ............................... passed
+* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/India' ........................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "New Delhi 1" .............................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: firstTest.feature:18 - path: $[0].capital, actual: 'New Delhi', expected: 'New Delhi 1', reason: not equal&#13;
+	at ✽.* match response[0].capital == "New Delhi 1" (firstTest.feature:18)&#13;
+
+* url 'https://restcountries.eu' .......................................... passed
+Given path 'rest/v2/name/China' ........................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match response[0].capital == "Beijing1" ................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: firstTest.feature:18 - path: $[0].capital, actual: 'Beijing', expected: 'Beijing1', reason: not equal&#13;
+	at ✽.* match response[0].capital == "Beijing1" (firstTest.feature:18)</failure>
+  </testcase>
+</testsuite>

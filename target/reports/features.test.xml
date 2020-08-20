@@ -1,0 +1,47 @@
+<testsuite failures="0" name="features/test.feature" skipped="0" tests="3" time="8.632059">
+  <testcase classname="features.test" name="1. GET request to return all countries details in the API response" time="2.876545">
+    <system-out>* url 'https://restcountries.eu' .......................................... passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/rest/v2/all' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print 'response result is ', response ................................... passed
+* match response[*].name contains 'Australia' ............................. passed</system-out>
+  </testcase>
+  <testcase classname="features.test" name="2. GET request to return an individual country details in the API response" time="3.230955">
+    <system-out>* url 'https://restcountries.eu' .......................................... passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/rest/v2/all' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print 'response result is ', response ................................... passed
+* match response[*].name contains 'Australia' ............................. passed
+* url 'https://restcountries.eu' .......................................... passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/rest/v2/name/Aus' ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match $[0].capital == "Canberra" ........................................ passed</system-out>
+  </testcase>
+  <testcase classname="features.test" name="3. GET request to return an individual country details in the API response" time="2.52456">
+    <system-out>* url 'https://restcountries.eu' .......................................... passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/rest/v2/all' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print 'response result is ', response ................................... passed
+* match response[*].name contains 'Australia' ............................. passed
+* url 'https://restcountries.eu' .......................................... passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/rest/v2/name/Aus' ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match $[0].capital == "Canberra" ........................................ passed
+* url 'https://restcountries.eu' .......................................... passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/rest/v2/name/Australia' ...................................... passed
+And param fullText = true ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,26 @@
+11:58:58.162 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+11:59:00.386 assertion failed: path: $[0].capital, actual: 'New Delhi', expected: 'New Delhi 1', reason: not equal
+eflate
+1 > Connection: Keep-Alive
+1 > Host: restcountries.eu
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+11:58:31.168 response time in milliseconds: 1542.40
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, X-Requested-With
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5c50451ad8eadf85-MEL
+1 < Cache-Control: public, max-age=86400
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 19 Aug 2020 01:58:31 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: [__cfduid=d272bc7ef52229dbef34d3477d92cda8d1597802310; expires=Fri, 18-Sep-20 01:58:30 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax, __cfduid=dd0bcac3b4da708048a36aadef59a25c51597802311; expires=Fri, 18-Sep-20 01:58:31 GMT; path=/; domain=.restcountries.eu; HttpOnly; SameSite=Lax]
+1 < Transfer-Encoding: chunked
+1 < cf-request-id: 04a60984c90000df8585027200000001
+[{"name":"India","topLevelDomain":[".in"],"alpha2Code":"IN","alpha3Code":"IND","callingCodes":["91"],"capital":"New Delhi","altSpellings":["IN","Bhārat","Republic of India","Bharat Ganrajya"],"region":"Asia","subregion":"Southern Asia","population":1295210000,"latlng":[20.0,77.0],"demonym":"Indian","area":3287590.0,"gini":33.4,"timezones":["UTC+05:30"],"borders":["AFG","BGD","BTN","MMR","CHN","NPL","PAK","LKA"],"nativeName":"भारत","numericCode":"356","currencies":[{"code":"INR","name":"Indian rupee","symbol":"₹"}],"languages":[{"iso639_1":"hi","iso639_2":"hin","name":"Hindi","nativeName":"हिन्दी"},{"iso639_1":"en","iso639_2":"eng","name":"English","nativeName":"English"}],"translations":{"de":"Indien","es":"India","fr":"Inde","ja":"インド","it":"India","br":"Índia","pt":"Índia","nl":"India","hr":"Indija","fa":"هند"},"flag":"https://restcountries.eu/data/ind.svg","regionalBlocs":[{"acronym":"SAARC","name":"South Asian Association for Regional Cooperation","otherAcronyms":[],"otherNames":[]}],"cioc":"IND"}]
+
+11:58:31.251 assertion failed: path: $[0].capital, actual: 'New Delhi', expected: 'New Delhi 1', reason: not equal
