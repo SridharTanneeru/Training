@@ -1,0 +1,71 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <max:UpdateYVWWORKORDER>
+         <max:YVWWORKORDERSet>
+            <max:WORKORDER action="Change">
+               <max:SITEID>YVW</max:SITEID>
+               <max:WONUM>#(woNum)</max:WONUM>
+               <max:STATUS>AWCOMP</max:STATUS>
+               <max:GBSREADYFORPAYMENT>1</max:GBSREADYFORPAYMENT>
+               <max:ACTFINISH>#(pastDate)</max:ACTFINISH>
+               <max:VENDOR>INT058</max:VENDOR>
+               <max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>MR3</max:ALNVALUE>
+                  <max:ASSETATTRID>COMPCODE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>#(subOffDate)</max:ALNVALUE>
+                  <max:CHANGEDATE>#(pastDate)</max:CHANGEDATE>
+                  <max:ASSETATTRID>WS12</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:NUMVALUE>#(lastMTRRead)</max:NUMVALUE>
+                  <max:ASSETATTRID>WS15</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>#(badgeNumber)</max:ALNVALUE>
+                  <max:ASSETATTRID>WS13</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>#(newMeter)</max:ALNVALUE>
+                  <max:ASSETATTRID>WS14</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>#(servicePointID)</max:ALNVALUE>
+                  <max:ASSETATTRID>SERVICEPOINTID</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:SERVRECTRANS>
+                  <max:ENTERBY>NPS</max:ENTERBY>
+                  <max:GBSVENDOR>INT058</max:GBSVENDOR>
+                  <max:ITEMNUM>MR01P</max:ITEMNUM>
+                  <max:LINETYPE>STDSERVICE</max:LINETYPE>
+                  <max:STATUS>COMP</max:STATUS>
+                  <max:QUANTITY>6</max:QUANTITY>
+                  <max:ENTERDATE>#(pastDate)</max:ENTERDATE>
+                  <max:TRANSDATE>#(pastDate)</max:TRANSDATE>
+               </max:SERVRECTRANS>
+            </max:WORKORDER>
+         </max:YVWWORKORDERSet>
+      </max:UpdateYVWWORKORDER>
+   </soapenv:Body>
+</soapenv:Envelope>

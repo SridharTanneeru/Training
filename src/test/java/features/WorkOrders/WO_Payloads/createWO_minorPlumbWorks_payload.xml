@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header />
+	<soapenv:Body>
+		<max:CreateYVWWORKORDER>
+			<max:YVWWORKORDERSet>
+				<max:WORKORDER action="AddChange">
+					<max:SITEID>YVW</max:SITEID>
+					<max:STATUS>#(WOStatus)</max:STATUS>
+					<max:TARGSTARTDATE>#(targetStartDate)</max:TARGSTARTDATE>
+					<max:TARGCOMPDATE>#(targetCompDate)</max:TARGCOMPDATE>
+					<max:WOSERVICEADDRESS>
+						<max:SADDRESSCODE>#(sAddressCode)</max:SADDRESSCODE>
+					</max:WOSERVICEADDRESS>
+					<max:JPNUM>#(JPNum)</max:JPNUM>
+				</max:WORKORDER>
+			</max:YVWWORKORDERSet>
+		</max:CreateYVWWORKORDER>
+	</soapenv:Body>
+</soapenv:Envelope>

@@ -15,9 +15,38 @@
         <karate.version>0.9.4</karate.version>
         <cucumber.reporting.version>4.8.0</cucumber.reporting.version>
         <maven.surefire.plugin.version>2.10</maven.surefire.plugin.version>
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
 
     </properties>
     <dependencies>
+    <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>${spring.boot.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>        
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>     
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc7</artifactId>
+            <version>12.1.0.2</version>
+            <scope>runtime</scope>
+        </dependency>
         <!--    Karate  -->
         <dependency>
             <groupId>com.intuit.karate</groupId>

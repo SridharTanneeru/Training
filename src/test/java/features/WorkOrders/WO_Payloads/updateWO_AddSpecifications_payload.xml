@@ -1,0 +1,81 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <UpdateYVWWORKORDER xmlns="http://www.ibm.com/maximo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <YVWWORKORDERSet>
+            <WORKORDER action="Change">
+               <SITEID>YVW</SITEID>
+               <WONUM>#(woNum)</WONUM>
+               <!-- Work Order Specs for SEWER \ S_HCB \ SCLBLKHCB -->
+               <WORKORDERSPEC>
+                  <ALNVALUE>3</ALNVALUE>
+                  <ASSETATTRID>S1A</ASSETATTRID>
+                  <CHANGEBY>#(USERNAME)</CHANGEBY>
+                  <CHANGEDATE>#(currentTime)</CHANGEDATE>
+                  <CLASSSTRUCTUREID>#(classStructureID)</CLASSSTRUCTUREID>
+                  <MANDATORY>0</MANDATORY>
+                  <MEASUREUNITID />
+                  <NUMVALUE xsi:nil="true" />
+                  <ORGID>YVWORG</ORGID>
+                  <REFOBJECTNAME>WORKORDER</REFOBJECTNAME>
+                  <SECTION />
+                  <TABLEVALUE />
+               </WORKORDERSPEC>
+               <WORKORDERSPEC>
+                  <ALNVALUE>Y</ALNVALUE>
+                  <ASSETATTRID>S1B</ASSETATTRID>
+                  <CHANGEBY>#(USERNAME)</CHANGEBY>
+                  <CHANGEDATE>#(currentTime)</CHANGEDATE>
+                  <CLASSSTRUCTUREID>#(classStructureID)</CLASSSTRUCTUREID>
+                  <MANDATORY>0</MANDATORY>
+                  <MEASUREUNITID />
+                  <NUMVALUE xsi:nil="true" />
+                  <ORGID>YVWORG</ORGID>
+                  <SECTION />
+                  <TABLEVALUE />
+               </WORKORDERSPEC>
+               <WORKORDERSPEC>
+                  <ALNVALUE>Y</ALNVALUE>
+                  <ASSETATTRID>S1C</ASSETATTRID>
+                  <CHANGEBY>#(USERNAME)</CHANGEBY>
+                  <CHANGEDATE>#(currentTime)</CHANGEDATE>
+                  <CLASSSTRUCTUREID>#(classStructureID)</CLASSSTRUCTUREID>
+                  <MANDATORY>0</MANDATORY>
+                  <MEASUREUNITID />
+                  <NUMVALUE xsi:nil="true" />
+                  <ORGID>YVWORG</ORGID>
+                  <SECTION />
+                  <TABLEVALUE />
+               </WORKORDERSPEC>
+               <WORKORDERSPEC>
+                  <ALNVALUE>Y</ALNVALUE>
+                  <ASSETATTRID>S1D</ASSETATTRID>
+                  <CHANGEBY>#(USERNAME)</CHANGEBY>
+                  <CHANGEDATE>#(currentTime)</CHANGEDATE>
+                  <CLASSSTRUCTUREID>#(classStructureID)</CLASSSTRUCTUREID>
+                  <MANDATORY>0</MANDATORY>
+                  <MEASUREUNITID />
+                  <NUMVALUE xsi:nil="true" />
+                  <ORGID>YVWORG</ORGID>
+                  <SECTION />
+                  <TABLEVALUE />
+               </WORKORDERSPEC>
+               <WORKORDERSPEC>
+                  <ALNVALUE xsi:nil="true" />
+                  <ASSETATTRID>S8</ASSETATTRID>
+                  <CHANGEBY>#(USERNAME)</CHANGEBY>
+                  <CHANGEDATE>#(currentTime)</CHANGEDATE>
+                  <CLASSSTRUCTUREID>#(classStructureID)</CLASSSTRUCTUREID>
+                  <MANDATORY>0</MANDATORY>
+                  <MEASUREUNITID />
+                  <NUMVALUE>3</NUMVALUE>
+                  <ORGID>YVWORG</ORGID>
+                  <SECTION />
+                  <TABLEVALUE />
+               </WORKORDERSPEC>
+               <!-- End - Work Order Specs for SEWER \ S_HCB \ SCLBLKHCB -->
+            </WORKORDER>
+         </YVWWORKORDERSet>
+      </UpdateYVWWORKORDER>
+   </soapenv:Body>
+</soapenv:Envelope>

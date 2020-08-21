@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <max:CreateGBSWOBULK>
+         <max:GBSWOBULKSet>
+            <max:WORKORDER action="AddChange">
+               <max:SITEID>YVW</max:SITEID>
+               <max:STATUS>APPR</max:STATUS>
+               <max:ASSETNUM>#(assetNum)</max:ASSETNUM>
+               <max:TARGCOMPDATE>#(schedFinishDate)</max:TARGCOMPDATE>
+               <max:WOPRIORITY>2</max:WOPRIORITY>
+               <max:WOSERVICEADDRESS>
+                  <max:SADDRESSCODE>#(sAddressCode)</max:SADDRESSCODE>
+               </max:WOSERVICEADDRESS>
+               <max:JPNUM>#(JPNum)</max:JPNUM>
+               <max:GLACCOUNT>
+                  <max:VALUE>#(GLAccountValue)</max:VALUE>
+                  <GLCOMP glorder="0">#(glorder0)</GLCOMP>
+                  <GLCOMP glorder="1">#(glorder1)</GLCOMP>
+                  <GLCOMP glorder="2">#(glorder2)</GLCOMP>
+                  <GLCOMP glorder="3">#(glorder3)</GLCOMP>
+                  <GLCOMP glorder="4">#(glorder4)</GLCOMP>
+                  <GLCOMP glorder="5">#(glorder5)</GLCOMP>
+               </max:GLACCOUNT>
+            </max:WORKORDER>
+         </max:GBSWOBULKSet>
+      </max:CreateGBSWOBULK>
+   </soapenv:Body>
+</soapenv:Envelope>

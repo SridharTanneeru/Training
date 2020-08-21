@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <max:UpdateYVWFAN>
+         <max:YVWFANSet>
+            <max:SR action="Change">
+               <max:TICKETID>#(srNum)</max:TICKETID>
+               <max:CLASS>#(FANClass)</max:CLASS>
+               <max:STATUS>#(FANStatus2)</max:STATUS>
+               <max:WORKLOG>
+                  <max:LOGTYPE>FANCOMMENT</max:LOGTYPE>
+                  <max:DESCRIPTION>#(description)</max:DESCRIPTION>
+                  <max:DESCRIPTION_LONGDESCRIPTION />
+                  <max:CREATEBY>SVC-MAXIMO-IFACE</max:CREATEBY>
+                  <max:CLIENTVIEWABLE>1</max:CLIENTVIEWABLE>
+               </max:WORKLOG>
+            </max:SR>
+         </max:YVWFANSet>
+      </max:UpdateYVWFAN>
+   </soapenv:Body>
+</soapenv:Envelope>

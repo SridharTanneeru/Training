@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <max:QueryGBSSR >
+         <max:GBSSRQuery operandMode="AND">
+            <max:SR>
+               <max:TICKETID operator="=" >#(srNum)</max:TICKETID>
+            </max:SR>
+         </max:GBSSRQuery>
+      </max:QueryGBSSR>
+   </soapenv:Body>
+</soapenv:Envelope> 

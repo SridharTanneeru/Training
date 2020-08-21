@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header />
+	<soapenv:Body>
+		<QueryGBSASSET xmlns="http://www.ibm.com/maximo">
+			<max:GBSASSETQuery operandMode="AND">
+				<max:ASSET>
+					<GBSGISID>#(GBSGISID)</GBSGISID>
+				</max:ASSET>
+			</max:GBSASSETQuery>
+		</QueryGBSASSET>
+	</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,120 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <max:CreateGBSWOBULK>
+         <max:GBSWOBULKSet>
+            <max:WORKORDER action="AddChange">
+               <max:DESCRIPTION>Planned Meter Replacement</max:DESCRIPTION>
+               <max:GBSREPLACASSET>#(meterAssetNum)</max:GBSREPLACASSET>
+               <max:REPORTDATE>#(currentTime)</max:REPORTDATE>
+               <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+               <max:SITEID>YVW</max:SITEID>
+               <max:STATUS>DRAFT</max:STATUS>
+               <max:WOSERVICEADDRESS>
+                  <max:GBSSADDRESSCODE>#(SLID)</max:GBSSADDRESSCODE>
+               </max:WOSERVICEADDRESS>
+               <max:WORKLOG>
+                  <max:LOGTYPE>WORK</max:LOGTYPE>
+                  <max:GBSSUBLOGTYPE />
+                  <max:DESCRIPTION>#(initialWorklogDescription)</max:DESCRIPTION>
+                  <max:DESCRIPTION_LONGDESCRIPTION>#(initialWorklogLongDescription)</max:DESCRIPTION_LONGDESCRIPTION>
+                  <max:CREATEBY>NETWORK SERVICE</max:CREATEBY>
+                  <max:CREATEDATE>#(startDate)</max:CREATEDATE>
+                  <max:CLIENTVIEWABLE>1</max:CLIENTVIEWABLE>
+               </max:WORKLOG>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE />
+                  <max:ASSETATTRID>CYBLENUM</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>PMR</max:ALNVALUE>
+                  <max:ASSETATTRID>FIELDACTTYPE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>UNKN</max:ALNVALUE>
+                  <max:ASSETATTRID>METERGRPTYPE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:NUMVALUE>15</max:NUMVALUE>
+                  <max:ASSETATTRID>METERLOCATIONCODE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:NUMVALUE>#(lastMTRRead)</max:NUMVALUE>
+                  <max:ASSETATTRID>METERREADING</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>Q019</max:ALNVALUE>
+                  <max:ASSETATTRID>MTRREADINGCYCLE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>15190024</max:ALNVALUE>
+                  <max:ASSETATTRID>MTRREADROUTE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>19</max:ALNVALUE>
+                  <max:ASSETATTRID>MTRREADROUTEDTRCT</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>#(pastDate)</max:ALNVALUE>
+                  <max:ASSETATTRID>OLDMTRREADDATE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>Regular</max:ALNVALUE>
+                  <max:ASSETATTRID>OLDMTRREADTYPE</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>SoapUI</max:ALNVALUE>
+                  <max:ASSETATTRID>PKGNAME</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>UNKN</max:ALNVALUE>
+                  <max:ASSETATTRID>PREMISEDESC</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+               <max:WORKORDERSPEC>
+                  <max:ALNVALUE>#(servicePointID)</max:ALNVALUE>
+                  <max:ASSETATTRID>SERVICEPOINTID</max:ASSETATTRID>
+                  <max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+                  <max:CLASSSTRUCTUREID>PLANMETERREPL</max:CLASSSTRUCTUREID>
+                  <max:SECTION />
+               </max:WORKORDERSPEC>
+            </max:WORKORDER>
+         </max:GBSWOBULKSet>
+      </max:CreateGBSWOBULK>
+   </soapenv:Body>
+</soapenv:Envelope>

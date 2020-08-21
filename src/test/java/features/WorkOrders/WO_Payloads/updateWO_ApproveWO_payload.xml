@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <max:UpdateGBSWOBULK>
+         <max:GBSWOBULKSet>
+            <max:WORKORDER action="Change">
+               <max:SITEID>YVW</max:SITEID>
+               <max:STATUS>APPR</max:STATUS>
+               <max:WONUM>#(woNum)</max:WONUM>
+            </max:WORKORDER>
+         </max:GBSWOBULKSet>
+      </max:UpdateGBSWOBULK>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header />
+	<soapenv:Body>
+		<max:QueryYVWWORKORDER>
+			<max:YVWWORKORDERQuery operandMode="AND">
+				<max:WORKORDER>
+					<max:WONUM operator="=">#(woNum)</max:WONUM>
+				</max:WORKORDER>
+			</max:YVWWORKORDERQuery>
+		</max:QueryYVWWORKORDER>
+	</soapenv:Body>
+</soapenv:Envelope>

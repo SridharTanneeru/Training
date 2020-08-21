@@ -1,0 +1,71 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<max:UpdateYVWWORKORDER>
+			<max:YVWWORKORDERSet>
+				<max:WORKORDER action="Change">
+					<max:SITEID>YVW</max:SITEID>
+					<max:WONUM>#(woNum)</max:WONUM>
+					<max:STATUS>AWCOMP</max:STATUS>
+                    <max:GBSREADYFORPAYMENT>1</max:GBSREADYFORPAYMENT>
+					<max:ACTFINISH>#(actualFinishDate)</max:ACTFINISH>
+					<max:VENDOR>INT058</max:VENDOR>
+					<max:CLASSSTRUCTUREID>UNPLANMETERREPL</max:CLASSSTRUCTUREID>
+					<max:WORKORDERSPEC>
+						<max:ALNVALUE>#(mrType)</max:ALNVALUE>
+						<max:ASSETATTRID>COMPCODE</max:ASSETATTRID>
+						<max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+						<max:CLASSSTRUCTUREID>UNPLANMETERREPL</max:CLASSSTRUCTUREID>
+						<max:SECTION/>
+					</max:WORKORDERSPEC>
+					<max:WORKORDERSPEC>
+						<max:ALNVALUE>28/05/2020 09:59 AM</max:ALNVALUE>
+						<max:CHANGEDATE>2020-05-28T09:59:47</max:CHANGEDATE>
+						<max:ASSETATTRID>WS12</max:ASSETATTRID>
+						<max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+						<max:CLASSSTRUCTUREID>UNPLANMETERREPL</max:CLASSSTRUCTUREID>
+						<max:SECTION/>
+					</max:WORKORDERSPEC>
+					<max:WORKORDERSPEC>
+						<max:NUMVALUE>5032.000000</max:NUMVALUE>
+						<max:ASSETATTRID>WS15</max:ASSETATTRID>
+						<max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+						<max:CLASSSTRUCTUREID>UNPLANMETERREPL</max:CLASSSTRUCTUREID>
+						<max:SECTION/>
+					</max:WORKORDERSPEC>
+					<max:WORKORDERSPEC>
+						<max:ALNVALUE>MDF000261</max:ALNVALUE>
+						<max:ASSETATTRID>WS13</max:ASSETATTRID>
+						<max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+						<max:CLASSSTRUCTUREID>UNPLANMETERREPL</max:CLASSSTRUCTUREID>
+						<max:SECTION/>
+					</max:WORKORDERSPEC>
+					<max:WORKORDERSPEC>
+						<max:ALNVALUE>YRATD18521</max:ALNVALUE>
+						<max:ASSETATTRID>WS14</max:ASSETATTRID>
+						<max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+						<max:CLASSSTRUCTUREID>UNPLANMETERREPL</max:CLASSSTRUCTUREID>
+						<max:SECTION/>
+					</max:WORKORDERSPEC>
+					<max:WORKORDERSPEC>
+						<max:ALNVALUE>6674377528</max:ALNVALUE>
+						<max:ASSETATTRID>SERVICEPOINTID</max:ASSETATTRID>
+						<max:CHANGEBY>NETWORK SERVICE</max:CHANGEBY>
+						<max:CLASSSTRUCTUREID>UNPLANMETERREPL</max:CLASSSTRUCTUREID>
+						<max:SECTION/>
+					</max:WORKORDERSPEC>
+                    <max:SERVRECTRANS>
+						<max:ENTERBY>NPS</max:ENTERBY>
+						<max:GBSVENDOR>INT058</max:GBSVENDOR>
+						<max:ITEMNUM>MR01P</max:ITEMNUM>
+						<max:LINETYPE>STDSERVICE</max:LINETYPE>
+						<max:STATUS>COMP</max:STATUS>
+						<max:QUANTITY>6</max:QUANTITY>
+						<max:ENTERDATE>2020-05-28T09:59:47</max:ENTERDATE>
+						<max:TRANSDATE>2020-05-29T09:59:47</max:TRANSDATE>
+					</max:SERVRECTRANS>
+				</max:WORKORDER>
+			</max:YVWWORKORDERSet>
+		</max:UpdateYVWWORKORDER>
+	</soapenv:Body>
+</soapenv:Envelope>

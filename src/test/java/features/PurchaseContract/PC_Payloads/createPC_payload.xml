@@ -1,0 +1,61 @@
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+			<soapenv:Header />
+			<soapenv:Body>
+				<max:CreateGBSPC>
+					<max:GBSPCSet>
+						<max:PURCHVIEW action="AddChange">
+							<max:CHANGEBY>SVC-MAXIMO-IFACE</max:CHANGEBY>
+							<max:CHANGEDATE>#(changeDate)</max:CHANGEDATE>
+							<max:CONTRACTNUM>#(contractNum)</max:CONTRACTNUM>
+							<max:CONTRACTTYPE>#(contractType)</max:CONTRACTTYPE>
+							<max:DESCRIPTION>#(contractDescrption1)</max:DESCRIPTION>
+							<max:DESCRIPTION_LONGDESCRIPTION>int test 2</max:DESCRIPTION_LONGDESCRIPTION>
+							<max:EXTERNALREFID>#(externalREFid)</max:EXTERNALREFID>
+							<max:ORGID>YVWORG</max:ORGID>
+							<max:REVISIONNUM>11</max:REVISIONNUM>
+							<max:REVCOMMENTS>Test</max:REVCOMMENTS>
+							<max:STATUS>#(contractStatus)</max:STATUS>
+							<max:VENDOR>#(vendor)</max:VENDOR>
+							<max:PURCHASEAGENT>JMCLEOD</max:PURCHASEAGENT>
+							<max:CONTRACTAUTH>
+								<max:AUTHORGID>YVWORG</max:AUTHORGID>
+								<max:AUTHSITEID>YVW</max:AUTHSITEID>
+								<max:ISDEFAULT>1</max:ISDEFAULT>
+								<max:VENDOR>#(vendor)</max:VENDOR>
+							</max:CONTRACTAUTH>
+							<max:CONTRACTLINE>
+								<max:CATALOGCODE />
+								<max:CHGPRICEONUSE>0</max:CHGPRICEONUSE>
+								<max:CHGQTYONUSE>1</max:CHGQTYONUSE>
+								<max:COMMODITY />
+								<max:COMMODITYGROUP />
+								<max:CONDITIONCODE />
+								<max:CONTRACTLINEID>#(contractLineID)</max:CONTRACTLINEID>
+								<max:CONTRACTLINENUM>1</max:CONTRACTLINENUM>
+								<max:CONTRACTTYPE>#(contractType)</max:CONTRACTTYPE>
+								<max:DESCRIPTION>#(contractDescrption2)</max:DESCRIPTION>
+								<max:ENTERBY>PBABU</max:ENTERBY>
+								<max:ENTERDATE>#(enterDate)</max:ENTERDATE>
+								<max:GBSACTIVITYCODE />
+								<max:HASPAYMENTSCHED>0</max:HASPAYMENTSCHED>
+								<max:INSPECTIONREQUIRED>0</max:INSPECTIONREQUIRED>
+								<max:ITEMNUM>#(itemNum)</max:ITEMNUM>
+								<max:ITEMSETID>ITEMSET1</max:ITEMSETID>
+								<max:LINECOST>0.0</max:LINECOST>
+								<max:LINECOST2>0.0</max:LINECOST2>
+								<max:LINESTATUS>REVISD</max:LINESTATUS>
+								<max:LINETYPE>ITEM</max:LINETYPE>
+								<max:MANUFACTURER />
+								<max:MODELNUM />
+								<max:ORDERQTY>1.0</max:ORDERQTY>
+								<max:ORDERUNIT>EACH</max:ORDERUNIT>
+								<max:POREQUIRED>0</max:POREQUIRED>
+								<max:REMARK />
+								<max:REVSTATUS>#(revStatus)</max:REVSTATUS>
+								<max:UNITCOST>0.0</max:UNITCOST>
+							</max:CONTRACTLINE>
+						</max:PURCHVIEW>
+					</max:GBSPCSet>
+				</max:CreateGBSPC>
+			</soapenv:Body>
+		</soapenv:Envelope>

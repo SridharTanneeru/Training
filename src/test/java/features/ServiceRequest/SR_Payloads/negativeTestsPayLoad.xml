@@ -1,0 +1,26 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+                        <soapenv:Header/>
+                        <soapenv:Body>
+                        <max:CreateGBSSR >
+                        <max:GBSSRSet>
+                        <max:SR>
+                        <max:CLASS>SR</max:CLASS>
+                        <max:ORGID>YVWORG</max:ORGID>
+                        <max:SITEID>YVW</max:SITEID>
+                        <max:STATUS>NEW</max:STATUS>
+                        <max:GBSSADDRESSCODE>#(addressCode)</max:GBSSADDRESSCODE>
+                        <max:GBSCUSTOMERNAME>DAFNEY</max:GBSCUSTOMERNAME>
+                        <max:GBSMETHODOFADVICE>SMS</max:GBSMETHODOFADVICE>
+
+                        <max:GBSPRODUCT>#(definitionPRODUCT)</max:GBSPRODUCT>
+                        <max:GBSASSET>10014</max:GBSASSET>
+                        <max:GBSPLACE>10322</max:GBSPLACE>
+                        <max:GBSSYMPTOM>11792</max:GBSSYMPTOM>
+                        <max:GBSEXPECTATION>17056</max:GBSEXPECTATION>
+                        <max:GBSEFFECT>43975</max:GBSEFFECT>
+                        <max:GBSSRTYPE>#(srType)</max:GBSSRTYPE>
+                        </max:SR>
+                        </max:GBSSRSet>
+                        </max:CreateGBSSR>
+                        </soapenv:Body>
+                        </soapenv:Envelope>

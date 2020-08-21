@@ -1,0 +1,56 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header />
+	<soapenv:Body>
+		<CreateGBSASSET xmlns="http://www.ibm.com/maximo">
+			<max:GBSASSETSet>
+				<max:ASSET action="AddChange">
+					<max:ANCESTOR />
+					<max:ASSETTAG />
+					<max:ASSETTYPE />
+					<max:AUTOWOGEN>0</max:AUTOWOGEN>
+					<max:BINNUM />
+					<max:BUDGETCOST>0</max:BUDGETCOST>
+					<max:CHANGEPMSTATUS>0</max:CHANGEPMSTATUS>
+					<max:CHILDREN>0</max:CHILDREN>
+					<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+					<max:CONDITIONCODE />
+					<max:DEFAULTREPFAC />
+					<max:DEFAULTREPFACSITEID />
+					<max:DESCRIPTION>#(description)</max:DESCRIPTION>
+					<max:DESCRIPTION_LONGDESCRIPTION>#(longDescription)</max:DESCRIPTION_LONGDESCRIPTION>
+					<max:DIRECTION />
+					<max:DISABLED>0</max:DISABLED>
+					<max:ENDDESCRIPTION />
+					<max:FAILURECODE />
+					<max:GBSGISFEATURE>#(GBSGISFeature)</max:GBSGISFEATURE>
+					<max:GBSGISID>#(GBSGISID)</max:GBSGISID>
+					<max:GBSGISPUBLISH>1</max:GBSGISPUBLISH>
+					<max:GROUPNAME />
+					<max:HIERARCHYPATH />
+					<max:INSTALLDATE>#(installDate)</max:INSTALLDATE>
+					<max:INVCOST>0</max:INVCOST>
+					<max:ISCALIBRATION>0</max:ISCALIBRATION>
+					<max:ISLINEAR>0</max:ISLINEAR>
+					<max:ISRUNNING>1</max:ISRUNNING>
+					<max:ITEMNUM />
+					<max:ITEMSETID />
+					<max:ITEMTYPE />
+					<max:LOCATION>#(location)</max:LOCATION>
+					<max:LRM />
+					<max:ORGID>#(orgID)</max:ORGID>
+					<max:SADDRESSCODE>#(sAddressCode)</max:SADDRESSCODE>
+					<max:SENDERSYSID />
+					<max:SERIALNUM />
+					<max:SITEID>#(siteID)</max:SITEID>
+					<max:STARTDESCRIPTION />
+					<max:STATUS>#(initStatus)</max:STATUS>
+					<max:STATUSDATE>#(statusDate)</max:STATUSDATE>
+					<max:TEMPLATEID />
+					<max:TLOAMPARTITION>0</max:TLOAMPARTITION>
+					<max:UNCHARGEDCOST>0</max:UNCHARGEDCOST>
+					<max:YTDCOST>0</max:YTDCOST>
+				</max:ASSET>
+			</max:GBSASSETSet>
+		</CreateGBSASSET>
+	</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,185 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header />
+	<soapenv:Body>
+		<max:CreateGBSASSET>
+			<max:GBSASSETSet>
+				<max:ASSET action="AddChange">
+					<max:CHILDREN>0</max:CHILDREN>
+					<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+					<max:DESCRIPTION>#(description)</max:DESCRIPTION>
+					<max:DESCRIPTION_LONGDESCRIPTION>#(longDescription)</max:DESCRIPTION_LONGDESCRIPTION>
+					<max:GBSGISFEATURE>#(GBSGISFeature)</max:GBSGISFEATURE>
+					<max:GBSGISID>#(GBSGISID)</max:GBSGISID>
+					<max:GBSGISPUBLISH>1</max:GBSGISPUBLISH>
+					<max:INSTALLDATE>#(installDate)</max:INSTALLDATE>
+					<max:INVCOST>0</max:INVCOST>
+					<max:ISCALIBRATION>0</max:ISCALIBRATION>
+					<max:ISLINEAR>0</max:ISLINEAR>
+					<max:ISRUNNING>1</max:ISRUNNING>
+					<max:LOCATION>#(location)</max:LOCATION>
+					<max:ORGID>#(orgID)</max:ORGID>
+					<max:PLUSCISCONTAM>0</max:PLUSCISCONTAM>
+					<max:PLUSCISINHOUSECAL>0</max:PLUSCISINHOUSECAL>
+					<max:PLUSCISMTE>0</max:PLUSCISMTE>
+					<max:PLUSCPMEXTDATE>0</max:PLUSCPMEXTDATE>
+					<max:PLUSCSOLUTION>0</max:PLUSCSOLUTION>
+					<max:PLUSGEXREGISTERED>0</max:PLUSGEXREGISTERED>
+					<max:PRIORITY />
+					<max:PURCHASEPRICE>0</max:PURCHASEPRICE>
+					<max:REMOVEFROMACTIVEROUTES>0</max:REMOVEFROMACTIVEROUTES>
+					<max:REMOVEFROMACTIVESP>0</max:REMOVEFROMACTIVESP>
+					<max:RETURNEDTOVENDOR>0</max:RETURNEDTOVENDOR>
+					<max:ROLLTOALLCHILDREN>0</max:ROLLTOALLCHILDREN>
+					<max:SADDRESSCODE>#(sAddressCode)</max:SADDRESSCODE>
+					<max:SENDERSYSID />
+					<max:SERIALNUM />
+					<max:SITEID>#(siteID)</max:SITEID>
+					<max:STARTDESCRIPTION />
+					<max:STATUS>#(initStatus)</max:STATUS>
+					<max:STATUSDATE>#(statusDate)</max:STATUSDATE>
+					<max:TEMPLATEID />
+					<max:TLOAMPARTITION>0</max:TLOAMPARTITION>
+					<max:TOOLRATE />
+					<max:TOTALCOST>0</max:TOTALCOST>
+					<max:TOTDOWNTIME>0</max:TOTDOWNTIME>
+					<max:TOTUNCHARGEDCOST>0</max:TOTUNCHARGEDCOST>
+					<max:UNCHARGEDCOST>0</max:UNCHARGEDCOST>
+					<max:VENDOR />
+					<max:YTDCOST>0</max:YTDCOST>
+					<max:ASSETSPEC>
+						<max:ASSETATTRID>UNIQUEID</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ALNVALUE>#(GBSGISID)</max:ALNVALUE>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ALNVALUE>COUNCIL</max:ALNVALUE>
+						<max:ASSETATTRID>RESPAUTH</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ALNVALUE />
+						<max:ASSETATTRID>CONSTDT</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ALNVALUE />
+						<max:ASSETATTRID>RESPDEVL</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ALNVALUE />
+						<max:ASSETATTRID>WRNTYEXP</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ALNVALUE>maxtest</max:ALNVALUE>
+						<max:ASSETATTRID>FMSFLREF</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ALNVALUE>YV</max:ALNVALUE>
+						<max:ASSETATTRID>ASSETOWN</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ASSETATTRID>X1COORD</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:NUMVALUE>315337.12</max:NUMVALUE>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ASSETATTRID>Y1COORD</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:NUMVALUE>5836206.2660</max:NUMVALUE>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ALNVALUE>3401289</max:ALNVALUE>
+						<max:ASSETATTRID>OWNERID</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ASSETATTRID>X2COORD</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:NUMVALUE />
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+					<max:ASSETSPEC>
+						<max:ASSETATTRID>Y2COORD</max:ASSETATTRID>
+						<max:CLASSSTRUCTUREID>#(classStructureID)</max:CLASSSTRUCTUREID>
+						<max:CONTINUOUS>0</max:CONTINUOUS>
+						<max:INHERITEDFROMITEM>0</max:INHERITEDFROMITEM>
+						<max:ITEMSPECVALCHANGED>0</max:ITEMSPECVALCHANGED>
+						<max:LINEARASSETSPECID>0</max:LINEARASSETSPECID>
+						<max:NUMVALUE />
+						<max:ORGID>#(orgID)</max:ORGID>
+						<max:SECTION />
+					</max:ASSETSPEC>
+				</max:ASSET>
+			</max:GBSASSETSet>
+		</max:CreateGBSASSET>
+	</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,75 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <max:UpdateGBSWOBULK>
+         <max:GBSWOBULKSet>
+            <max:WORKORDER action="Change">
+             	<max:SITEID>YVW</max:SITEID>
+			<max:STATUS>WAPPR</max:STATUS>
+			<max:WONUM>#(woNum)</max:WONUM>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>6676707751</max:ALNVALUE>
+				<max:ASSETATTRID>CCBREFERENCE</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>Q161</max:ALNVALUE>
+				<max:ASSETATTRID>MTRREADINGCYCLE</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>2020-07-07 23:59:59</max:ALNVALUE>
+				<max:ASSETATTRID>OLDMTRREADDATE</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>Regular</max:ALNVALUE>
+				<max:ASSETATTRID>OLDMTRREADTYPE</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>MREPL-UP</max:ALNVALUE>
+				<max:ASSETATTRID>FIELDACTTYPE</max:ASSETATTRID>
+				<max:SECTION/>
+				</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>6674377528</max:ALNVALUE>
+				<max:ASSETATTRID>SERVICEPOINTID</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ASSETATTRID>METERLOCATIONCODE</max:ASSETATTRID>
+				<max:NUMVALUE>45</max:NUMVALUE>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ASSETATTRID>METERREADING</max:ASSETATTRID>
+				<max:NUMVALUE>5032.000000</max:NUMVALUE>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>09170009</max:ALNVALUE>
+				<max:ASSETATTRID>MTRREADROUTE</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE>Banyule</max:ALNVALUE>
+				<max:ASSETATTRID>MTRREADROUTEDTRCT</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKORDERSPEC>
+				<max:ALNVALUE></max:ALNVALUE>
+				<max:ASSETATTRID>CYBLENUM</max:ASSETATTRID>
+				<max:SECTION/>
+			</max:WORKORDERSPEC>
+			<max:WORKLOG>
+				<max:CREATEBY>SVC-MAXIMO-IFACE</max:CREATEBY>
+				<max:DESCRIPTION>SoapUI Test</max:DESCRIPTION>
+				<max:DESCRIPTION_LONGDESCRIPTION>SOAPUI - CCB Create WO</max:DESCRIPTION_LONGDESCRIPTION>
+				<max:LOGTYPE>WORK</max:LOGTYPE>
+			</max:WORKLOG>
+		</max:WORKORDER>
+		</max:GBSWOBULKSet>
+ 	</max:UpdateGBSWOBULK>
+   </soapenv:Body>
+</soapenv:Envelope>

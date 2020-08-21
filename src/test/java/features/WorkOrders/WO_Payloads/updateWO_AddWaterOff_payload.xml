@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <max:UpdateYVWWORKORDER creationDateTime="2008-09-29T11:49:45">
+         <max:YVWWORKORDERSet>
+            <max:WORKORDER action="Change">
+               <max:SITEID>YVW</max:SITEID>
+               <max:WONUM>#(woNum)</max:WONUM>
+               <max:GBSLASTWATEROFF>#(currentTime)</max:GBSLASTWATEROFF>
+               <max:GBSNEXTSCHWATERON>#(plannedOn)</max:GBSNEXTSCHWATERON>
+               <max:GBSWATEROUTAGES>
+                  <max:WONUM>#(woNum)</max:WONUM>
+                  <max:ACTUALOFF>#(actualOff)</max:ACTUALOFF>
+                  <max:ACTUALON xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                  <max:CHANGEBY>#(USERNAME)</max:CHANGEBY>
+                  <max:INSTANCENUM>1</max:INSTANCENUM>
+                  <max:ISACTIVE>#(isActive)</max:ISACTIVE>
+                  <max:LABORCODE>#(USERNAME)</max:LABORCODE>
+                  <max:NOTAPPLICABLE>0</max:NOTAPPLICABLE>
+                  <max:ORGID>YVWORG</max:ORGID>
+                  <max:PLANNED>#(isOutagePlanned)</max:PLANNED>
+                  <max:PLANNEDON>#(plannedOn)</max:PLANNEDON>
+                  <max:STATUS>#(outageStatusOFF)</max:STATUS>
+               </max:GBSWATEROUTAGES>
+            </max:WORKORDER>
+         </max:YVWWORKORDERSet>
+      </max:UpdateYVWWORKORDER>
+   </soapenv:Body>
+</soapenv:Envelope>

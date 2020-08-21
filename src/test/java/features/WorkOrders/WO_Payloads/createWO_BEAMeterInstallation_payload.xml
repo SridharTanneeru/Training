@@ -1,0 +1,31 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<max:CreateGBSWOBULK>
+			<max:GBSWOBULKSet>
+				<max:WORKORDER>
+					<max:DESCRIPTION>#(WODesc)</max:DESCRIPTION>
+					<max:EXTERNALREFID />
+					<max:JPNUM>#(JPNum)</max:JPNUM>
+					<max:PARENT/>
+					<max:REPORTDATE>#(reportDate)</max:REPORTDATE>
+					<max:SITEID>YVW</max:SITEID>
+					<max:SOURCESYSID>#(sourceSysID)</max:SOURCESYSID>
+					<max:STATUS>#(WOStatus)</max:STATUS>
+					<max:TARGCOMPDATE>#(targetCompDate)</max:TARGCOMPDATE>
+					<max:TARGSTARTDATE>#(reportDate)</max:TARGSTARTDATE>
+					<max:VENDOR>#(vendor)</max:VENDOR>
+					<max:WOPRIORITY>3</max:WOPRIORITY>
+					<max:WORKORDERSPEC>
+						<max:ALNVALUE>#(ALNValue)</max:ALNVALUE>
+						<max:ASSETATTRID>#(assetAttrID)</max:ASSETATTRID>
+						<max:SECTION/>
+					</max:WORKORDERSPEC>
+					<max:WOSERVICEADDRESS>
+						<max:SADDRESSCODE>#(sAddressCode)</max:SADDRESSCODE>
+					</max:WOSERVICEADDRESS>
+				</max:WORKORDER>
+			</max:GBSWOBULKSet>
+		</max:CreateGBSWOBULK>
+	</soapenv:Body>
+</soapenv:Envelope>

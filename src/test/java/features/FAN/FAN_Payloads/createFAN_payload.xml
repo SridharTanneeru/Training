@@ -1,0 +1,26 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header />
+	<soapenv:Body>
+		<max:CreateYVWFAN>
+			<max:YVWFANSet>
+				<max:SR action="Create">
+					<max:GBSCALLERCOMP>YVW</max:GBSCALLERCOMP>
+					<max:GBSCUSTOMERNAME>#(firstCustName)</max:GBSCUSTOMERNAME>
+					<max:YVWCUSTLASTNAME>KaratePOC</max:YVWCUSTLASTNAME>
+					<max:GBSCUSTPHONE>0400112233</max:GBSCUSTPHONE>
+					<max:GBSSRTYPE>#(srType)</max:GBSSRTYPE>
+					<max:CLASSSTRUCTUREID>#(classStrID)</max:CLASSSTRUCTUREID>
+					<max:GBSSECONDCUSTNAME>#(secondCustName)</max:GBSSECONDCUSTNAME>
+					<max:GBSSECONDPHONE />
+					<max:GBSSECONDCOMMENTS>comms</max:GBSSECONDCOMMENTS>
+					<max:TARGETFINISH>#(targetFinish)</max:TARGETFINISH>
+					<max:GBSCALLERREGO>1GY5RN</max:GBSCALLERREGO>
+					<max:ORIGRECORDCLASS>#(recordClass)</max:ORIGRECORDCLASS>
+					<max:ORIGRECORDID>#(recordId)</max:ORIGRECORDID>
+					<max:ORIGRECSITEID>YVW</max:ORIGRECSITEID>
+					<max:ORIGRECORGID>YVWORG</max:ORIGRECORGID>
+				</max:SR>
+			</max:YVWFANSet>
+		</max:CreateYVWFAN>
+	</soapenv:Body>
+</soapenv:Envelope>

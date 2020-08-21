@@ -1,0 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+	<soapenv:Header />
+	<soapenv:Body>
+		<max:UpdateGBSWOBULK>
+			<max:GBSWOBULKSet>
+				<max:WORKORDER action="Change">
+					<max:CHANGEBY>SELECT</max:CHANGEBY>
+					<max:CHANGEDATE>#(changeDate)</max:CHANGEDATE>
+					<max:SITEID>YVW</max:SITEID>
+					<max:STATUS>#(finalStatus)</max:STATUS>
+					<max:STATUSDATE>#(changeDate)</max:STATUSDATE>
+					<max:WONUM>#(woNum)</max:WONUM>
+					<max:SERVRECTRANS>
+						<max:ENTERBY>SELECT</max:ENTERBY>
+						<max:ENTERDATE>#(changeDate)</max:ENTERDATE>
+						<max:GBSVENDOR>#(vendor)</max:GBSVENDOR>
+						<max:ITEMNUM>#(servRecTrans3)</max:ITEMNUM>
+						<max:LINETYPE>STDSERVICE</max:LINETYPE>
+						<max:QUANTITY>1</max:QUANTITY>
+						<max:TRANSDATE>#(changeDate)</max:TRANSDATE>
+					</max:SERVRECTRANS>
+					<max:SERVRECTRANS>
+						<max:ENTERBY>SELECT</max:ENTERBY>
+						<max:ENTERDATE>#(changeDate)</max:ENTERDATE>
+						<max:GBSVENDOR>#(vendor)</max:GBSVENDOR>
+						<max:ITEMNUM>#(servRecTrans2)</max:ITEMNUM>
+						<max:LINETYPE>STDSERVICE</max:LINETYPE>
+						<max:QUANTITY>1</max:QUANTITY>
+						<max:TRANSDATE>#(changeDate)</max:TRANSDATE>
+					</max:SERVRECTRANS>
+					<max:SERVRECTRANS>
+						<max:ENTERBY>SELECT</max:ENTERBY>
+						<max:ENTERDATE>#(changeDate)</max:ENTERDATE>
+						<max:GBSVENDOR>#(vendor)</max:GBSVENDOR>
+						<max:ITEMNUM>#(servRecTrans1)</max:ITEMNUM>
+						<max:LINETYPE>STDSERVICE</max:LINETYPE>
+						<max:QUANTITY>1</max:QUANTITY>
+						<max:TRANSDATE>#(changeDate)</max:TRANSDATE>
+					</max:SERVRECTRANS>
+				</max:WORKORDER>
+			</max:GBSWOBULKSet>
+		</max:UpdateGBSWOBULK>
+	</soapenv:Body>
+</soapenv:Envelope>

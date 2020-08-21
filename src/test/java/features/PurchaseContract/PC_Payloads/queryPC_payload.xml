@@ -1,0 +1,12 @@
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+		<soapenv:Header />
+		<soapenv:Body>
+			<max:QueryGBSPC>
+				<max:GBSPCQuery operandMode="AND">
+					<max:PURCHVIEW>
+						<max:CONTRACTNUM operator="=">#(contractNum)</max:CONTRACTNUM>
+					</max:PURCHVIEW>
+				</max:GBSPCQuery>
+			</max:QueryGBSPC>
+		</soapenv:Body>
+	</soapenv:Envelope>

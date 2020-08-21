@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+				   <soapenv:Header />
+				   <soapenv:Body>
+				      <max:CreateGBSSR>
+				         <max:GBSSRSet>
+				            <max:SR>
+				               <max:CLASS>SR</max:CLASS>
+				               <max:ORGID>YVWORG</max:ORGID>
+				               <max:SITEID>YVW</max:SITEID>
+				               <max:STATUS>NEW</max:STATUS>
+				               <max:GBSSADDRESSCODE>#(addressCode)</max:GBSSADDRESSCODE>
+				               <max:GBSCUSTOMERNAME>DAFNEY</max:GBSCUSTOMERNAME>
+				               <max:GBSMETHODOFADVICE>SMS</max:GBSMETHODOFADVICE>
+				               <max:GBSCUSTPHONE>0400123456</max:GBSCUSTPHONE>
+				               <!-- Stoppage Plumber Details -->
+				               <max:GBSSECONDCONTACT>1</max:GBSSECONDCONTACT>
+				               <max:GBSSECONDCUSTNAME>James</max:GBSSECONDCUSTNAME>
+				               <max:GBSSECONDPHONE>0400987654</max:GBSSECONDPHONE>
+				               <max:GBSPLUMBERLICENCE>1234</max:GBSPLUMBERLICENCE>
+				               <!-- Sewer - Blocked Retic (SCLBLKRETIC) - Sewer > Manhole > Naturestrip > Overflow > Urgent > Entering Drain  -->
+				               <max:GBSPRODUCT>#(product)</max:GBSPRODUCT>
+				               <max:GBSASSET>#(asset)</max:GBSASSET>
+				               <max:GBSPLACE>#(place)</max:GBSPLACE>
+				               <max:GBSSYMPTOM>#(symptom)</max:GBSSYMPTOM>
+				               <max:GBSEXPECTATION>#(expectation)</max:GBSEXPECTATION>
+				               <max:GBSEFFECT>#(effect)</max:GBSEFFECT>
+				               <max:GBSSRTYPE>#(SRType)</max:GBSSRTYPE>
+				            </max:SR>
+				         </max:GBSSRSet>
+				      </max:CreateGBSSR>
+				   </soapenv:Body>
+				</soapenv:Envelope>

@@ -1,0 +1,20 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header/>
+   <soapenv:Body>
+        <max:UpdateGBSWOBULK>
+            <max:GBSWOBULKSet>
+                <max:WORKORDER action="Change">
+                    <max:SITEID>YVW</max:SITEID>
+                    <max:STATUS>INPRG</max:STATUS>
+                    <max:WONUM>#(woNum)</max:WONUM>
+                    <max:WORKLOG>
+                        <max:CREATEBY>SVC-MAXIMO-IFACE</max:CREATEBY>
+                        <max:DESCRIPTION>SoapUI Test</max:DESCRIPTION>
+                        <max:DESCRIPTION_LONGDESCRIPTION>SOAPUI - CCB Create WO</max:DESCRIPTION_LONGDESCRIPTION>
+                        <max:LOGTYPE>WORK</max:LOGTYPE>
+                    </max:WORKLOG>
+                </max:WORKORDER>
+            </max:GBSWOBULKSet>
+        </max:UpdateGBSWOBULK>
+   </soapenv:Body>
+</soapenv:Envelope>

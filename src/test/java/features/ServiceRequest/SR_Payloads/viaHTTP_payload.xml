@@ -1,0 +1,8 @@
+<InitiateSR_SUBMIT xmlns="http://www.ibm.com/maximo">
+   <SRMboKey>
+      <SR>
+         <TICKETID>#(srNum)</TICKETID>
+         <SITEID>YVW</SITEID>
+      </SR>
+   </SRMboKey>
+</InitiateSR_SUBMIT>

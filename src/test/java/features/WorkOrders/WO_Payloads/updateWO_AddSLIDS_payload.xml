@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <UpdateYVWWORKORDER xmlns="http://www.ibm.com/maximo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <YVWWORKORDERSet>
+            <WORKORDER action="Change">
+               <SITEID>YVW</SITEID>
+               <WONUM>#(woNum)</WONUM>
+               <GBSWORELATEDSLIDS>
+                  <ADDRESSCODE>1000010</ADDRESSCODE>
+                  <DESCRIPTION />
+                  <GBSWORELATEDSLIDSID />
+                  <INSTANCENUM>1</INSTANCENUM>
+                  <ORGID>YVWORG</ORGID>
+                  <TYPE/>
+               </GBSWORELATEDSLIDS>
+               <GBSWORELATEDSLIDS>
+                  <ADDRESSCODE>1000011</ADDRESSCODE>
+                  <DESCRIPTION />
+                  <GBSWORELATEDSLIDSID />
+                  <INSTANCENUM>1</INSTANCENUM>
+                  <ORGID>YVWORG</ORGID>
+                  <TYPE/>
+               </GBSWORELATEDSLIDS>
+               <GBSWORELATEDSLIDS>
+                  <ADDRESSCODE>1000012</ADDRESSCODE>
+                  <DESCRIPTION />
+                  <GBSWORELATEDSLIDSID />
+                  <INSTANCENUM>1</INSTANCENUM>
+                  <ORGID>YVWORG</ORGID>
+                  <TYPE/>
+               </GBSWORELATEDSLIDS>
+               <GBSWORELATEDSLIDS>
+                  <ADDRESSCODE>1000013</ADDRESSCODE>
+                  <DESCRIPTION />
+                  <GBSWORELATEDSLIDSID />
+                  <INSTANCENUM>1</INSTANCENUM>
+                  <ORGID>YVWORG</ORGID>
+                  <TYPE/>
+               </GBSWORELATEDSLIDS>
+            </WORKORDER>
+         </YVWWORKORDERSet>
+      </UpdateYVWWORKORDER>
+   </soapenv:Body>
+</soapenv:Envelope>

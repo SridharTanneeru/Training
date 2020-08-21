@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:max="http://www.ibm.com/maximo">
+   <soapenv:Header />
+   <soapenv:Body>
+      <max:UpdateYVWWORKORDER creationDateTime="2008-09-29T11:49:45">
+         <max:YVWWORKORDERSet>
+            <max:WORKORDER action="Change">
+               <max:SITEID>YVW</max:SITEID>
+               <max:WONUM>#(woNum)</max:WONUM>
+               <max:ASSETNUM>#(assetNum)</max:ASSETNUM>
+               <max:FAILUREREPORT>
+                  <max:ASSETNUM>#(assetNum)</max:ASSETNUM>
+                  <max:FAILURECODE>BLOCKAGE</max:FAILURECODE>
+                  <max:ORGID>YVWORG</max:ORGID>
+                  <max:TYPE maxvalue="PROBLEM">PROBLEM</max:TYPE>
+               </max:FAILUREREPORT>
+               <max:FAILUREREPORT>
+                  <max:ASSETNUM>#(assetNum)</max:ASSETNUM>
+                  <max:FAILURECODE>TREEROOT</max:FAILURECODE>
+                  <max:ORGID>YVWORG</max:ORGID>
+                  <max:TYPE maxvalue="CAUSE">CAUSE</max:TYPE>
+               </max:FAILUREREPORT>
+               <max:FAILUREREPORT>
+                  <max:ASSETNUM>#(assetNum)</max:ASSETNUM>
+                  <max:FAILURECODE>DIGOUT</max:FAILURECODE>
+                  <max:ORGID>YVWORG</max:ORGID>
+                  <max:TYPE maxvalue="REMEDY">REMEDY</max:TYPE>
+               </max:FAILUREREPORT>
+            </max:WORKORDER>
+         </max:YVWWORKORDERSet>
+      </max:UpdateYVWWORKORDER>
+   </soapenv:Body>
+</soapenv:Envelope>
